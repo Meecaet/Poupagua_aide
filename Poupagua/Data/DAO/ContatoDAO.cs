@@ -128,7 +128,8 @@ namespace Data.DAO
 
         public bool RemoverLinha(Contato entity, out string messsage)
         {
-            throw new NotImplementedException();
+            if (entity.Id <= 0)
+                throw new Exception("Contato não existe no banco de dados.");
         }
     }
 }

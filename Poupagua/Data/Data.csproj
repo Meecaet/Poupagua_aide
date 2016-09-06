@@ -47,6 +47,7 @@
     <Compile Include="ConnectionSingleton.cs" />
     <Compile Include="DAO\CaixaDAguaDAO.cs" />
     <Compile Include="DAO\ContatoDAO.cs" />
+    <Compile Include="DAO\EnderecoDao.cs" />
     <Compile Include="DAO\IDao.cs" />
     <Compile Include="DAO\UsuarioComumDAO.cs" />
     <Compile Include="Parameters.Designer.cs">

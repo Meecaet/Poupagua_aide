@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Data.DAO
 {
-    public class EnderecoDao
+    public class EnderecoDAO
     {
 
     }

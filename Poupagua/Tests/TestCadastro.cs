@@ -3,6 +3,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Model.Cadastro;
 using Data.DAO;
 using Data;
+using System.Collections.Generic;
 
 namespace Tests
 {
@@ -75,6 +76,17 @@ namespace Tests
             UsuarioComumDAO dao = new UsuarioComumDAO();
             usuario = dao.ConsultaLinha(3, true);
             Assert.IsTrue(usuario != null);
+        }
+
+        [TestMethod]
+        public void LerVariosUsusarios()
+        {
+            ConnectionSingleton.Init();
+            UsuarioComumDAO dao = new UsuarioComumDAO();
+            List<UsuarioComum> usuarios;
+
+            usuarios = dao.ConsultaLinhas("NOME LIKE '@PARAM1'", true, "Mateus%");
+            Assert.IsTrue(usuarios.Count > 1);
         }
     }
 }

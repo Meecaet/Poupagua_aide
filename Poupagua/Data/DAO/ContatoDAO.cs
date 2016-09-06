@@ -21,7 +21,50 @@ namespace Data.DAO
 
         public bool AtualizarLinha(Contato entity, out string messsage)
         {
-            throw new NotImplementedException();
+            if (entity.Id <= 0)
+                throw new Exception("Contato não existe no banco de dados");
+
+            try
+            {
+                bool result;
+                CurrentSqlCommand = "UPDATE Contato SET ";
+
+
+                #region Columns
+
+                if (!string.IsNullOrEmpty(entity.DDD))
+                    CurrentSqlCommand += string.Format("DDD = '{0}',", entity.DDD);
+
+                if (!string.IsNullOrEmpty(entity.Telefone))
+                    CurrentSqlCommand += string.Format("TELEFONE = '{0}',", entity.Telefone);
+
+                if (!string.IsNullOrEmpty(entity.Email))
+                    CurrentSqlCommand += string.Format("EMAIL = '{0}',", entity.Email);
+
+                if (entity.Usuario != null && entity.Usuario.Id > 0)
+                    CurrentSqlCommand += string.Format("ID_USUARIO = {0},", entity.Usuario.Id);
+
+                #endregion
+
+                if (CurrentSqlCommand.EndsWith(","))
+                    CurrentSqlCommand = CurrentSqlCommand.Remove(CurrentSqlCommand.Length - 1);
+
+                CurrentSqlCommand += string.Format(" WHERE ID_CONTATO = {0}", entity.Id);
+                result = ConnectionSingleton.ExecuteCommand(CurrentSqlCommand);
+
+                if (result)
+                    messsage = "Contato atualizado com sucesso.";
+                else
+                    messsage = "Erro ao se atualizar o contato";
+
+                return result;
+
+            }
+            catch (Exception e)
+            {
+                messsage = e.Message;
+                return false;
+            }
         }
 
         public Contato ConsultaLinha(int key, bool lazy = true)
@@ -101,7 +144,7 @@ namespace Data.DAO
                 values += string.Format("'{0}',", entity.Usuario.Id);
             }
 
-            #endregion
+            #endregion            
 
             if (CurrentSqlCommand.EndsWith(","))
             {
@@ -130,6 +173,26 @@ namespace Data.DAO
         {
             if (entity.Id <= 0)
                 throw new Exception("Contato não existe no banco de dados.");
+
+            try
+            {
+                bool result;
+
+                CurrentSqlCommand = string.Format("DELETE FROM Contato WHERE ID_CONTATO = {0}", entity.Id);
+                result = ConnectionSingleton.ExecuteCommand(CurrentSqlCommand);
+
+                if (result)
+                    messsage = "Contato removido com sucesso";
+                else
+                    messsage = "Contato não removido";
+
+                return result;
+            }
+            catch (Exception e)
+            {
+                messsage = e.Message;
+                return false;
+            }            
         }
     }
 }

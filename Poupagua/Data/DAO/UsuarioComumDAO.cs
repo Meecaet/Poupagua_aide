@@ -170,7 +170,44 @@ namespace Data.DAO
 
         public bool RemoverLinha(UsuarioComum entity, out string messsage)
         {
-            throw new NotImplementedException();
+            if (entity.Id <= 0)
+                throw new Exception("Usuário não existe no banco de dados.");
+
+            try
+            {
+                bool result;
+
+                messsage = string.Empty;
+
+                if (entity.Contatos != null && entity.Contatos.Count > 0)
+                {
+                    string internalContatoMessage;
+                    ContatoDAO contatoDAO = new ContatoDAO();
+
+                    foreach (Contato contato in entity.Contatos)
+                    {
+                        contatoDAO.RemoverLinha(contato, out internalContatoMessage);
+                        messsage += internalContatoMessage;
+                    }
+                }
+
+                //TODO: same thing with Residencias
+
+                CurrentSqlCommand = string.Format("DELETE FROM Usuario WHERE ID_CONTATO = {0}", entity.Id);
+                result = ConnectionSingleton.ExecuteCommand(CurrentSqlCommand);
+
+                if (result)
+                    messsage = "Contato removido com sucesso";
+                else
+                    messsage = "Contato não removido";
+
+                return result;
+            }
+            catch (Exception e)
+            {
+                messsage = e.Message;
+                return false;
+            }
         }
 
         private bool InserirLinhaAutoInsertMode(UsuarioComum entity, out string messsage)

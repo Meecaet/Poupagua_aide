@@ -8,3 +8,13 @@ D:\Thais\Poupagua\Tests\bin\Debug\Model.pdb
 D:\Thais\Poupagua\Tests\obj\Debug\Tests.csprojResolveAssemblyReference.cache
 D:\Thais\Poupagua\Tests\obj\Debug\Tests.dll
 D:\Thais\Poupagua\Tests\obj\Debug\Tests.pdb
+C:\Users\Meecaet\Source\Repos\Poupagua_aide\Poupagua\Tests\bin\Debug\Tests.dll
+C:\Users\Meecaet\Source\Repos\Poupagua_aide\Poupagua\Tests\bin\Debug\Tests.pdb
+C:\Users\Meecaet\Source\Repos\Poupagua_aide\Poupagua\Tests\bin\Debug\Data.dll
+C:\Users\Meecaet\Source\Repos\Poupagua_aide\Poupagua\Tests\bin\Debug\Model.dll
+C:\Users\Meecaet\Source\Repos\Poupagua_aide\Poupagua\Tests\bin\Debug\MySql.Data.dll
+C:\Users\Meecaet\Source\Repos\Poupagua_aide\Poupagua\Tests\bin\Debug\Data.pdb
+C:\Users\Meecaet\Source\Repos\Poupagua_aide\Poupagua\Tests\bin\Debug\Model.pdb
+C:\Users\Meecaet\Source\Repos\Poupagua_aide\Poupagua\Tests\obj\Debug\Tests.csprojResolveAssemblyReference.cache
+C:\Users\Meecaet\Source\Repos\Poupagua_aide\Poupagua\Tests\obj\Debug\Tests.dll
+C:\Users\Meecaet\Source\Repos\Poupagua_aide\Poupagua\Tests\obj\Debug\Tests.pdb

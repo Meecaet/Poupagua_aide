@@ -7,3 +7,12 @@ D:\Thais\Poupagua\Data\obj\Debug\Data.dll
 D:\Thais\Poupagua\Data\obj\Debug\Data.pdb
 D:\Thais\Poupagua\Data\bin\Debug\Model.dll
 D:\Thais\Poupagua\Data\bin\Debug\Model.pdb
+C:\Users\Meecaet\Source\Repos\Poupagua_aide\Poupagua\Data\bin\Debug\Data.dll.config
+C:\Users\Meecaet\Source\Repos\Poupagua_aide\Poupagua\Data\bin\Debug\Data.dll
+C:\Users\Meecaet\Source\Repos\Poupagua_aide\Poupagua\Data\bin\Debug\Data.pdb
+C:\Users\Meecaet\Source\Repos\Poupagua_aide\Poupagua\Data\bin\Debug\Model.dll
+C:\Users\Meecaet\Source\Repos\Poupagua_aide\Poupagua\Data\bin\Debug\MySql.Data.dll
+C:\Users\Meecaet\Source\Repos\Poupagua_aide\Poupagua\Data\bin\Debug\Model.pdb
+C:\Users\Meecaet\Source\Repos\Poupagua_aide\Poupagua\Data\obj\Debug\Data.csprojResolveAssemblyReference.cache
+C:\Users\Meecaet\Source\Repos\Poupagua_aide\Poupagua\Data\obj\Debug\Data.dll
+C:\Users\Meecaet\Source\Repos\Poupagua_aide\Poupagua\Data\obj\Debug\Data.pdb

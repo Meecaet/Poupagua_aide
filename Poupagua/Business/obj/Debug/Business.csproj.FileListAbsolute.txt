@@ -1,0 +1,5 @@
+D:\Thais\Poupagua\Business\bin\Debug\Business.dll
+D:\Thais\Poupagua\Business\bin\Debug\Business.pdb
+D:\Thais\Poupagua\Business\obj\Debug\Business.csprojResolveAssemblyReference.cache
+D:\Thais\Poupagua\Business\obj\Debug\Business.dll
+D:\Thais\Poupagua\Business\obj\Debug\Business.pdb

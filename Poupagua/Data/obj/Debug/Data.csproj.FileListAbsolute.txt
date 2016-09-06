@@ -1,0 +1,9 @@
+D:\Thais\Poupagua\Data\bin\Debug\Data.dll.config
+D:\Thais\Poupagua\Data\bin\Debug\Data.dll
+D:\Thais\Poupagua\Data\bin\Debug\Data.pdb
+D:\Thais\Poupagua\Data\bin\Debug\MySql.Data.dll
+D:\Thais\Poupagua\Data\obj\Debug\Data.csprojResolveAssemblyReference.cache
+D:\Thais\Poupagua\Data\obj\Debug\Data.dll
+D:\Thais\Poupagua\Data\obj\Debug\Data.pdb
+D:\Thais\Poupagua\Data\bin\Debug\Model.dll
+D:\Thais\Poupagua\Data\bin\Debug\Model.pdb

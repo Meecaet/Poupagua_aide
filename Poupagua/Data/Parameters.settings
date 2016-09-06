@@ -1,0 +1,9 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Data" GeneratedClassName="Parameters">
+  <Profiles />
+  <Settings>
+    <Setting Name="ConnectionString" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Server=127.0.0.1;Port=5511;Database=poupagua_mat;Uid=root;Pwd='m@1475963m#@'</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

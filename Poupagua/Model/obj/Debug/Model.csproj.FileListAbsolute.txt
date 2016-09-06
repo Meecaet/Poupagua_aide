@@ -1,0 +1,5 @@
+D:\Thais\Poupagua\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+D:\Thais\Poupagua\Model\bin\Debug\Model.dll
+D:\Thais\Poupagua\Model\bin\Debug\Model.pdb
+D:\Thais\Poupagua\Model\obj\Debug\Model.dll
+D:\Thais\Poupagua\Model\obj\Debug\Model.pdb

@@ -102,8 +102,10 @@ namespace Data.DAO
                     contatos.Add(contato);
                 }
 
-                ConnectionSingleton.FinishDataReader(reader);
             }
+
+            if(reader != null)
+                ConnectionSingleton.FinishDataReader(reader);
 
             return contatos;
         }

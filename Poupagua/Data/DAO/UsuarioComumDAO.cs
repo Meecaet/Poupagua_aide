@@ -67,9 +67,9 @@ namespace Data.DAO
 
                     usuarios.Add(currentUsuario);
                 }
-
-                ConnectionSingleton.FinishDataReader(reader);
             }
+            if(reader != null)
+                ConnectionSingleton.FinishDataReader(reader);
 
             if (lazy)
             {

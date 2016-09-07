@@ -85,7 +85,7 @@ namespace Tests
             UsuarioComumDAO dao = new UsuarioComumDAO();
             List<UsuarioComum> usuarios;
 
-            usuarios = dao.ConsultaLinhas("NOME LIKE '@PARAM1'", true, "Mateus%");
+            usuarios = dao.ConsultaLinhas("NOME LIKE @PARAM1", true, "Mateus%");
             Assert.IsTrue(usuarios.Count > 1);
         }
     }
